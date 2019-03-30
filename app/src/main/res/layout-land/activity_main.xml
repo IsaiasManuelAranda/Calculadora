@@ -6,155 +6,198 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn_rest_land"
-        android:layout_width="261dp"
-        android:layout_height="76dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="28dp"
-        android:backgroundTint="@android:color/holo_red_dark"
-        android:text="-"
-        android:textAlignment="center"
-        android:textColor="@android:color/background_dark"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="141dp" />
+    <LinearLayout
+        android:layout_width="715dp"
+        android:layout_height="401dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="6dp">
 
-    <Button
-        android:id="@+id/btn_sum_land"
-        android:layout_width="261dp"
-        android:layout_height="76dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="28dp"
-        android:backgroundTint="@android:color/holo_green_light"
-        android:text="+"
-        android:textAlignment="center"
-        android:textColor="@android:color/background_dark"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="46dp" />
+        <LinearLayout
+            android:layout_width="310dp"
+            android:layout_height="310dp"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_result_land"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="88dp"
-        android:text="Resultado: "
-        android:textAlignment="viewStart"
-        android:textAllCaps="false"
-        android:textColor="@android:color/background_dark"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_num2_land" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/et_res_land"
-        android:layout_width="161dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="84dp"
-        android:ems="10"
-        android:enabled="false"
-        android:inputType="numberDecimal"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:visibility="visible"
-        app:layout_constraintTop_toBottomOf="@+id/et_num2_land"
-        tools:layout_editor_absoluteX="202dp" />
+                <TextView
+                    android:id="@+id/tv_num1_land"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Número 1:"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/tv_num2_land"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="44dp"
-        android:text="Número 2:"
-        android:textAlignment="viewStart"
-        android:textAllCaps="false"
-        android:textColor="@android:color/background_dark"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_num1_land" />
+                <EditText
+                    android:id="@+id/et_num1_land"
+                    android:layout_width="161dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/tv_num1_land"
+                    tools:layout_editor_absoluteY="68dp" />
+            </LinearLayout>
 
-    <EditText
-        android:id="@+id/et_num2_land"
-        android:layout_width="161dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="40dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/tv_num2_land"
-        app:layout_constraintTop_toBottomOf="@+id/et_num1_land" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/tv_num1_land"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="68dp"
-        android:text="Número 1:"
-        android:textAlignment="viewStart"
-        android:textAllCaps="false"
-        android:textColor="@android:color/background_dark"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/tv_num2_land"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Número 2:"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/et_num1_land"
-        android:layout_width="161dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="28dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/tv_num1_land"
-        tools:layout_editor_absoluteY="68dp" />
+                <EditText
+                    android:id="@+id/et_num2_land"
+                    android:layout_width="161dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="10dp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toEndOf="@+id/tv_num2_land"
+                    app:layout_constraintTop_toBottomOf="@+id/et_num1_land" />
+            </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_mult_land"
-        android:layout_width="85dp"
-        android:layout_height="77dp"
-        android:backgroundTint="@color/colorAccent"
-        android:text="*"
-        android:textColor="@android:color/background_dark"
-        android:textSize="30sp"
-        tools:layout_editor_absoluteX="442dp"
-        tools:layout_editor_absoluteY="235dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="168dp"
+                android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/btn_div_land"
-        android:layout_width="85dp"
-        android:layout_height="77dp"
-        android:layout_marginStart="4dp"
-        android:backgroundTint="@color/colorAccent"
-        android:text="/"
-        android:textColor="@android:color/background_dark"
-        android:textSize="30sp"
-        app:layout_constraintStart_toEndOf="@+id/btn_mult_land"
-        tools:layout_editor_absoluteY="235dp" />
+                <TextView
+                    android:id="@+id/tv_result_land"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Resultado: "
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btn_modul_land"
-        android:layout_width="85dp"
-        android:layout_height="77dp"
-        android:backgroundTint="@color/colorAccent"
-        android:text="%"
-        android:textColor="@android:color/background_dark"
-        android:textSize="30sp"
-        tools:layout_editor_absoluteX="618dp"
-        tools:layout_editor_absoluteY="235dp" />
+                <EditText
+                    android:id="@+id/et_res_land"
+                    android:layout_width="161dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:visibility="visible"
+                    tools:layout_editor_absoluteX="202dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="321dp"
+            android:layout_height="328dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="350dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_sum_land"
+                    android:layout_width="261dp"
+                    android:layout_height="76dp"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@android:color/holo_green_light"
+                    android:text="+"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteY="46dp" />
+
+                <Button
+                    android:id="@+id/btn_rest_land"
+                    android:layout_width="261dp"
+                    android:layout_height="76dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@android:color/holo_red_dark"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteY="141dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_mult_land"
+                        android:layout_width="85dp"
+                        android:layout_height="77dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:text="*"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="30sp"
+                        tools:layout_editor_absoluteX="442dp"
+                        tools:layout_editor_absoluteY="235dp" />
+
+                    <Button
+                        android:id="@+id/btn_div_land"
+                        android:layout_width="85dp"
+                        android:layout_height="77dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:text="/"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="30sp"
+                        app:layout_constraintStart_toEndOf="@+id/btn_mult_land"
+                        tools:layout_editor_absoluteY="235dp" />
+
+                    <Button
+                        android:id="@+id/btn_modul_land"
+                        android:layout_width="85dp"
+                        android:layout_height="77dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:text="%"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="30sp"
+                        tools:layout_editor_absoluteX="618dp"
+                        tools:layout_editor_absoluteY="235dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
